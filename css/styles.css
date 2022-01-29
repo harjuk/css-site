@@ -4,11 +4,11 @@ body {
     margin: 0;
     font-family: 'Rajdhani', sans-serif;
     text-align: center;
-    background: rgb(191, 202, 244);
+    /*  background: rgb(191, 202, 244);
     background: -moz-radial-gradient(circle, rgba(191, 202, 244, 1) 0%, rgba(128, 127, 134, 1) 100%);
     background: -webkit-radial-gradient(circle, rgba(191, 202, 244, 1) 0%, rgba(128, 127, 134, 1) 100%);
     background: radial-gradient(circle, rgba(191, 202, 244, 1) 0%, rgba(128, 127, 134, 1) 100%);
-    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#bfcaf4", endColorstr="#807f86", GradientType=1);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#bfcaf4", endColorstr="#807f86", GradientType=1); */
 }
 
 h1 {
@@ -54,6 +54,18 @@ hr {
 
 /*##################################################### CLASS SELECTORS ##############################################################*/
 
+.hovermove-r {
+    animation: wiggle_right 12s;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+}
+
+.hovermove-l {
+    animation: wiggle_left 17s;
+    animation-iteration-count: infinite;
+    animation-delay: 9s;
+}
+
 .middle-container {
     padding: 25px 0 30px 0;
 }
@@ -68,9 +80,7 @@ hr {
 }
 
 .between-sections {
-    border: 5px solid midnightblue;
-    border-radius: 20px;
-    margin-top: 64px;
+    margin-bottom: 2.4rem;
 }
 
 .skill-row>p {
@@ -138,7 +148,10 @@ hr {
     color: black;
 }
 
-.top-container {
+
+/* .top-container, */
+
+body {
     background: rgb(126, 189, 246);
     background: radial-gradient(circle, rgba(126, 189, 246, 1) 0%, rgba(180, 208, 221, 1) 100%);
 }
@@ -186,4 +199,31 @@ hr {
     background-image: -o-linear-gradient(top, #30e3cb, #2bc4ad);
     background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
     text-decoration: none;
+}
+
+
+/*##################################################### KEYFRAMES ##############################################################*/
+
+@keyframes wiggle_right {
+    0% {
+        transform: translate(0px, 0px);
+    }
+    50% {
+        transform: translate(80px, 0px);
+    }
+    100% {
+        transform: translate(0px, 0px);
+    }
+}
+
+@keyframes wiggle_left {
+    0% {
+        transform: translate(0px, 0px);
+    }
+    50% {
+        transform: translate(-80px, 0px);
+    }
+    100% {
+        transform: translate(0px, 0px);
+    }
 }
