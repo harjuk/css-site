@@ -4,6 +4,11 @@ body {
     margin: 0;
     font-family: 'Rajdhani', sans-serif;
     text-align: center;
+    background: rgb(191, 202, 244);
+    background: -moz-radial-gradient(circle, rgba(191, 202, 244, 1) 0%, rgba(128, 127, 134, 1) 100%);
+    background: -webkit-radial-gradient(circle, rgba(191, 202, 244, 1) 0%, rgba(128, 127, 134, 1) 100%);
+    background: radial-gradient(circle, rgba(191, 202, 244, 1) 0%, rgba(128, 127, 134, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#bfcaf4", endColorstr="#807f86", GradientType=1);
 }
 
 h1 {
@@ -43,20 +48,29 @@ hr {
     border: 1vw dotted #EAF6F6;
     border-top: none;
     width: 10vw;
-    margin: 0.7vw auto 0.7vw auto;
+    margin: 5vw auto;
 }
 
 
 /*##################################################### CLASS SELECTORS ##############################################################*/
+
+.middle-container {
+    padding: 25px 0 30px 0;
+}
 
 .bottom-container>p>a {
     text-decoration: none;
     margin: auto 10px;
 }
 
+.bottom-container>p>a:hover {
+    color: whitesmoke;
+}
+
 .between-sections {
-    border: 10px solid midnightblue;
+    border: 5px solid midnightblue;
     border-radius: 20px;
+    margin-top: 64px;
 }
 
 .skill-row>p {
@@ -82,7 +96,7 @@ hr {
 .mountain {
     width: 630px;
     position: relative;
-    top: 5px;
+    top: 6px;
 }
 
 .top-container>h2 {
@@ -129,15 +143,6 @@ hr {
     background: radial-gradient(circle, rgba(126, 189, 246, 1) 0%, rgba(180, 208, 221, 1) 100%);
 }
 
-.middle-container {
-    background: rgb(191, 202, 244);
-    background: -moz-radial-gradient(circle, rgba(191, 202, 244, 1) 0%, rgba(128, 127, 134, 1) 100%);
-    background: -webkit-radial-gradient(circle, rgba(191, 202, 244, 1) 0%, rgba(128, 127, 134, 1) 100%);
-    background: radial-gradient(circle, rgba(191, 202, 244, 1) 0%, rgba(128, 127, 134, 1) 100%);
-    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#bfcaf4", endColorstr="#807f86", GradientType=1);
-    padding-bottom: 3vw;
-}
-
 .skill-it-pic {
     width: 25%;
     float: left;
@@ -170,6 +175,7 @@ hr {
     font-size: 40px;
     padding: 10px 20px 10px 20px;
     text-decoration: none;
+    margin: 2vw auto;
 }
 
 .btn:hover {
